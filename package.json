@@ -14,7 +14,8 @@
     "author": "NineCollective",
     "license": "MIT",
     "dependencies": {
-        "cron-parser": "~0.3.3"
+        "cron-parser": "~0.3.3",
+        "uuid": "2.0.2"
     },
     "devDependencies": {
         "mocha": "~1.12",
