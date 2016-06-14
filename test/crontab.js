@@ -7,7 +7,7 @@ describe('Crontab', function(){
         var jobId = crontab.scheduleJob("* * * * *", function(){
             console.log("Hello world");
         });
-        expect(typeof(jobId)).to.be(typeof(new Date().getTime()));
+        expect(typeof(jobId)).to.be(typeof('string'));
         done();
     });
 
@@ -27,7 +27,7 @@ describe('Crontab', function(){
         var jobId = crontab.scheduleJob(yesterdayOfNextYear, function(){
             console.log("Hello world");
         });
-        expect(typeof(jobId)).to.be(typeof(new Date().getTime()));
+        expect(typeof(jobId)).to.be(typeof('string'));
         done();
     });
 
